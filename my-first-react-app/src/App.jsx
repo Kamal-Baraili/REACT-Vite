@@ -45,9 +45,9 @@ function App() {
       </div>
 
       <div className="Planets">
-        {planets.map((planet, key) => {
-          if (planet.isGasPlanet) return <Planets name={planet.name} />;
-        })}
+        {planets.map(
+          (planet, key) => planet.isGasPlanet && <Planets name={planet.name} />
+        )}
       </div>
     </>
   );

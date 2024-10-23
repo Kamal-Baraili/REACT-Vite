@@ -1,5 +1,6 @@
 import "./App.css";
 import Users from "./Users";
+import Planets from "./Planets";
 
 function App() {
   const age = 18;
@@ -9,6 +10,15 @@ function App() {
     { name: "Kamal", age: "25" },
     { name: "John", age: "22" },
     { name: "Mark", age: "23" },
+  ];
+
+  const planets = [
+    { name: "Mars", isGasPlanet: false },
+    { name: "Earth", isGasPlanet: false },
+    { name: "Jupiter", isGasPlanet: true },
+    { name: "Venus", isGasPlanet: false },
+    { name: "Neptune", isGasPlanet: true },
+    { name: "Uranus", isGasPlanet: true },
   ];
 
   return (
@@ -27,9 +37,18 @@ function App() {
           return <h3 key={key}>{nam}</h3>;
         })}
       </div>
-      {users.map((user, key) => {
-        return <Users name={user.name} age={user.age} />;
-      })}
+
+      <div className="Names">
+        {users.map((user, key) => {
+          return <Users name={user.name} age={user.age} />;
+        })}
+      </div>
+
+      <div className="Planets">
+        {planets.map((planet, key) => {
+          if (planet.isGasPlanet) return <Planets name={planet.name} />;
+        })}
+      </div>
     </>
   );
 }

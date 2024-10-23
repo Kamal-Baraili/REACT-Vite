@@ -7,7 +7,9 @@ h2 {
   color: red;
 }
 
-.container {
+.container,
+.Names,
+.Planets {
   border: 1px solid black;
   display: flex;
   flex-direction: column;

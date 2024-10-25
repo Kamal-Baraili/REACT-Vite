@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App,
+.header,
+.footer {
+  text-align: center;
+}
+
+.header,
+.footer {
+  background-color: black;
+  padding: 0.25rem 10rem;
+}
+
+.navbar,
+.footer_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  margin: 0 2rem;
+}
+
+.link:hover {
+  color: aqua;
+  text-decoration: white underline;
+}
+
+.main_container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

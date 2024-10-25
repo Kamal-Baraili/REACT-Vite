@@ -6,6 +6,7 @@ import { Menu } from "./pages/Menu";
 import { Contact } from "./pages/Contact";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
+import { Error } from "./Error";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
       </Router>

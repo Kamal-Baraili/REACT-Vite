@@ -1,4 +1,13 @@
-.container {
+.container,
+.second_container,
+.third_container {
   text-align: center;
-  margin: 2rem 0;
+  margin: 3rem 0;
+  padding: 1rem;
+  border: 2px solid black;
+}
+
+.third_container  button {
+  margin: 0.5rem;
+  cursor: pointer;
 }

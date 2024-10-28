@@ -1,16 +1,22 @@
 .container {
-  display: flex;
-  justify-content: center;
+  margin: 0 0 0 40rem;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  width: 15%;
-  align-items: center;
+  width: 100%;
+  align-items: flex-start;
 }
 
-input {
+.d_flex {
   margin: 0.5rem 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
+p {
+  margin: 0 1rem;
+  color: red;
+}
